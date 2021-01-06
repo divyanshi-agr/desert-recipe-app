@@ -36,7 +36,7 @@ export default function Modal() {
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-gray-600 text-lg leading-relaxed">
-                    Ingredients:
+                    Ingredients: 1. Chocolate 2. Whipped cream
                   </p>
                 </div>
                 {/*footer*/}
