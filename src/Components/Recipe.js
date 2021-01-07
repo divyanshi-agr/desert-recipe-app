@@ -35,7 +35,7 @@ export default function Modal() {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
-                  <p className="my-4 text-gray-600 text-lg leading-relaxed">
+                  <p className="my-4 text-gray-600 text-sm leading-relaxed">
                     Ingredients: 1. Chocolate 2. Whipped cream
                   </p>
                 </div>
