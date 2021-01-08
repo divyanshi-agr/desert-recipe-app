@@ -3,7 +3,6 @@ import Card from "./Card";
 
 function Cards() {
   const [recipes, setRecipes] = useState([]);
-  const [ingredients, setIngredients] = useState([]);
 
   const APP_ID = "978a9de6";
   const APP_KEY = "5246d97d7117ccc8914af900bb9ef325";

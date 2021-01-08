@@ -29,6 +29,7 @@ function Card({ title, img, ingredients }) {
           img={img}
           ingredients={ingredients}
           setShowModal={setShowModal}
+          showModal={showModal}
         />
       )}
     </div>

@@ -1,17 +1,24 @@
 import React, { useState } from "react";
 
-export default function Modal({ title, img, ingredients, setShowModal }) {
+export default function Modal({
+  title,
+  img,
+  ingredients,
+  setShowModal,
+  showModal,
+}) {
   // const [showModal, setShowModal] = useState(false);
+
   return (
     <>
-      <button
+      {/* <button
         className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
         type="button"
         style={{ transition: "all .15s ease" }}
         onClick={() => setShowModal(true)}
       >
         Open regular modal
-      </button>
+      </button> */}
 
       <div
         className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
@@ -31,7 +38,12 @@ export default function Modal({ title, img, ingredients, setShowModal }) {
             {/*body*/}
             <div className="relative p-6 flex-auto">
               <p className="my-4 text-gray-600 text-sm leading-relaxed">
-                Ingredients:<br></br> 1. Chocolate 2. Whipped cream
+                Ingredients:<br></br>
+                <ol>
+                  {ingredients.map((ingredient, i) => {
+                    <li className="text-xs">{ingredient}</li>;
+                  })}
+                </ol>
               </p>
             </div>
             {/*footer*/}
